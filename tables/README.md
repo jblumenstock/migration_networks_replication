@@ -1,4 +1,4 @@
-# Migration and the Value of Social Networks
+# Replication files for tables
 
 This folder lists all the codes for generating tables in the paper. The table below lists all the code, input data, output data, and note for each table.
 
