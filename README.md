@@ -1,13 +1,14 @@
 # migration_networks_replication
 Welcome. This repository contains the replication files (code and template datasets) for the paper: 
-Blumenstock, J.E., Chi, G., Tan, X., 2023. Migration and the Value of Social Networks. (Forthcoming, Review of Economic Studies)
 
-There are three folders in this repository:
-- data: containing all the input and output data for figures and tables.
-- figures: containing all the scripts for generating figures.
-- tables: containing all the scripts for generating tables.
+- Blumenstock, J.E., Chi, G., Tan, X., 2023. Migration and the Value of Social Networks. (*Forthcoming, Review of Economic Studies*)
 
-The three scripts in this main folder detect migrants and calculate network structures for each person. The outputs of these scripts are the input for most of the tables and figures in the paper.
+The repository contains three folders:
+- data: Contains all of the sample input and output data required to generate the figures and tables
+- figures: Contains the code needed to generate the figures
+- tables: Contains the code needed to generate the tables
+
+The top-level directory also contains three scripts that are used to detect migrations and calculate network statistics for each mobile subscriber. The outputs of these scripts provide the input for most of the tables and figures in the paper.
 
 | Name                                                                                            | Step                                                                                                            | Script                                                    | input data                                                                                                                                                                                                                                                                     | output                                                                                                                                                                                                                                                                                   | Note                                                                                                                                                                       |
 | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
