@@ -1,0 +1,2 @@
+user,home,d_all,d_1,c_1,s_1,l_1,conn_weight_1,support_weight_1,information_weight_1,d_percent_1,strong_tie_1,weak_tie_1,d_2,c_2,s_2,l_2,conn_weight_2,support_weight_2,information_weight_2,d_percent_2,strong_tie_2,weak_tie_2,d_home,c_home,s_home,l_home,conn_weight_home,support_weight_home,information_weight_home,d_percent_home,strong_tie_home,weak_tie_home
+1,1,30,23,0.1,0.2,300,20,80,1500,0.1,10,13,0,0,0,0,0,0,0,0,0,0,23,0.1,0.2,300,20,80,1500,0.1,10,13
