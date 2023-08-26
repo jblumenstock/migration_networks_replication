@@ -1,8 +1,6 @@
 # migration_networks_replication
-Replication files for "Migration and the Value of Social Networks"
-
-This repository contains the code and the template datasets used in the paper: 
-Blumenstock, J.E., Chi, G., Tan, X., 2023. Migration and the Value of Social Networks. (REStud)
+Welcome. This repository contains the replication files (code and template datasets) for the paper: 
+Blumenstock, J.E., Chi, G., Tan, X., 2023. Migration and the Value of Social Networks. (Forthcoming, Review of Economic Studies)
 
 There are three folders in this repository:
 - data: containing all the input and output data for figures and tables.
