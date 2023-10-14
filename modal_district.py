@@ -3,83 +3,83 @@ from dateutil.relativedelta import relativedelta
 
 
 def if_night(t):
-	h = int(t.split(':')[0])
-	if h >= 18 or h <=7:
-		return True
-	else:
-		return False
+    h = int(t.split(':')[0])
+    if h >= 18 or h <=7:
+        return True
+    else:
+        return False
 
 # format data
 def hour_modal_tower(line, number):
-	line = line.split('_')
-	return (line[0] + '_' + line[1] + '_' + line[2] + '_' + line[3] + '_' + line[4], number)
+    line = line.split('_')
+    return (line[0] + '_' + line[1] + '_' + line[2] + '_' + line[3] + '_' + line[4], number)
 
 # format data
 def hour_modal_tower_1(line, number):
-	line = line.split('_')
-	return (line[0] + '_' + line[1] + '_' + line[2] + '_' + line[3] + '_' + line[4] + '_' + str(number))
+    line = line.split('_')
+    return (line[0] + '_' + line[1] + '_' + line[2] + '_' + line[3] + '_' + line[4] + '_' + str(number))
 
 # format data: id_year_month_day_tower
 # from today 18:00 - 24:00 to tomorrow 0:00 - 7:00 => as today's location
 def daily_modal_tower_1(v1):
-	v1_split = v1.split('_')
-	hour = int(v1_split[2])
-	if hour >= 18:
-		return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_' + v1_split[1][4:6] + '_' + v1_split[3])
-	#if hour is within 0:00 - 7:00, it is the previous day according to the algorithm
-	else:
-		if int(v1_split[1][4:6]) > 10:
-			return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_' + str(int(v1_split[1][4:6])-1) + '_' + v1_split[3])
-		else:
-			return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_0' + str(int(v1_split[1][4:6])-1) + '_' + v1_split[3])
+    v1_split = v1.split('_')
+    hour = int(v1_split[2])
+    if hour >= 18:
+        return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_' + v1_split[1][4:6] + '_' + v1_split[3])
+    #if hour is within 0:00 - 7:00, it is the previous day according to the algorithm
+    else:
+        if int(v1_split[1][4:6]) > 10:
+            return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_' + str(int(v1_split[1][4:6])-1) + '_' + v1_split[3])
+        else:
+            return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_0' + str(int(v1_split[1][4:6])-1) + '_' + v1_split[3])
 
 def daily_modal_tower_1_2(v1):
-	v1_split = v1.split('_')
-	hour = int(v1_split[2])
-	if hour >= 18:
-		return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_' + v1_split[1][4:6] + '_' + v1_split[2] + '_' + v1_split[3])
-	#if hour is within 0:00 - 7:00, it is the previous day according to the algorithm
-	else:
-		if int(v1_split[1][4:6]) > 10:
-			return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_' + str(int(v1_split[1][4:6])-1) + '_' + v1_split[2] + '_' + v1_split[3])
-		else:
-			return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_0' + str(int(v1_split[1][4:6])-1) + '_' + v1_split[2] + '_' + v1_split[3])
+    v1_split = v1.split('_')
+    hour = int(v1_split[2])
+    if hour >= 18:
+        return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_' + v1_split[1][4:6] + '_' + v1_split[2] + '_' + v1_split[3])
+    #if hour is within 0:00 - 7:00, it is the previous day according to the algorithm
+    else:
+        if int(v1_split[1][4:6]) > 10:
+            return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_' + str(int(v1_split[1][4:6])-1) + '_' + v1_split[2] + '_' + v1_split[3])
+        else:
+            return (v1_split[0] + '_' + v1_split[1][:2] + '_' + v1_split[1][2:4] + '_0' + str(int(v1_split[1][4:6])-1) + '_' + v1_split[2] + '_' + v1_split[3])
 
 def daily_modal_tower_1_3(line, dist):
-	line = line.split('_')
-	return (line[0] + '_' + line[1] + '_' + line[2] + '_' + line[3] + '_' + dist)
+    line = line.split('_')
+    return (line[0] + '_' + line[1] + '_' + line[2] + '_' + line[3] + '_' + dist)
 
 def daily_modal_tower_2(line, number):
-	line = line.split('_')
-	return (line[0] + '_' + line[1] + '_' + line[2] + '_' + line[3], number)
+    line = line.split('_')
+    return (line[0] + '_' + line[1] + '_' + line[2] + '_' + line[3], number)
 
 def daily_modal_tower_3(line, number):
-	line = line.split('_')
-	return (line[0] + '_' + line[1] + '_' + line[2] + '_' + line[3] + '_' + str(number))
+    line = line.split('_')
+    return (line[0] + '_' + line[1] + '_' + line[2] + '_' + line[3] + '_' + str(number))
 
 def daily_modal_tower_3_2(line, number):
-	line = line.split('_')
-	return (line[0] + '_' + line[1] + '_' + line[2] + '_' + str(number))
+    line = line.split('_')
+    return (line[0] + '_' + line[1] + '_' + line[2] + '_' + str(number))
 
 def monthly_modal_tower_1(v1, v2):
-	v1_split = v1.split('_')
-	return (v1_split[0] + '_' + v1_split[1] + '_' + v1_split[2] + '_' + v2)
+    v1_split = v1.split('_')
+    return (v1_split[0] + '_' + v1_split[1] + '_' + v1_split[2] + '_' + v2)
 
 def monthly_modal_tower_2(line, number):
-	line = line.split('_')
-	return (line[0] + '_' + line[1] + '_' + line[2], number)
+    line = line.split('_')
+    return (line[0] + '_' + line[1] + '_' + line[2], number)
 
 def monthly_modal_tower_3(line, number):
-	line = line.split('_')
-	return (line[0] + '_' + line[1] + '_' + line[2] + '_' + str(number))
+    line = line.split('_')
+    return (line[0] + '_' + line[1] + '_' + line[2] + '_' + str(number))
 
 def monthly_modal_tower_4(line):
-	line = line.split('_')
-	return (line[0] + '_' + line[1] + '_' + line[2])
+    line = line.split('_')
+    return (line[0] + '_' + line[1] + '_' + line[2])
 
 def tower_to_district(v1, v2, towers):
-	if int(v2) in towers.keys():
-		return (v1, towers[int(v2)])
+    if int(v2) in towers.keys():
+        return (v1, towers[int(v2)])
 
 def get_one_dist_hour(v1, v2):
     if len(v2) == 1:

@@ -6,21 +6,21 @@ end_date = datetime.strptime('2008 6','%Y %m')
 loop_num = relativedelta(end_date, start_date).months + 12 * relativedelta(end_date, start_date).years + 1
 
 def migration_type(user, d2, d3, d4, d5):
-        district = '11'
-	if d2 == d3 and d3 == d4 and d4 == d5:
-		if d2 == district:
-			return [user, '3', d2, d4, d2, d3, d4, d5] # user, home, destination
-		else:
-			return [user, '4', d2, d4, d2, d3, d4, d5]
-	elif d2 == d3 and d4 == d5 and d3 != d4:
-		if d2 == district:
-			return [user, '2', d2, d4, d2, d3, d4, d5]
-		elif d4 == district:
-			return [user, '1', d2, d4, d2, d3, d4, d5]
-		else:
-			return [user, '5', d2, d4, d2, d3, d4, d5]
-	else:
-		return [user, '6', d2, d4, d2, d3, d4, d5] # roamer has no home and destination.
+    district = '11'
+    if d2 == d3 and d3 == d4 and d4 == d5:
+        if d2 == district:
+            return [user, '3', d2, d4, d2, d3, d4, d5] # user, home, destination
+        else:
+            return [user, '4', d2, d4, d2, d3, d4, d5]
+    elif d2 == d3 and d4 == d5 and d3 != d4:
+        if d2 == district:
+            return [user, '2', d2, d4, d2, d3, d4, d5]
+        elif d4 == district:
+            return [user, '1', d2, d4, d2, d3, d4, d5]
+        else:
+            return [user, '5', d2, d4, d2, d3, d4, d5]
+    else:
+        return [user, '6', d2, d4, d2, d3, d4, d5] # roamer has no home and destination.
 
 modal_district_dir = 'data/'
 for i in range(loop_num):
