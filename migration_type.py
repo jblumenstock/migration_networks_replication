@@ -1,3 +1,4 @@
+# run this script within Spark Shell (./bin/spark-shell)
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
