@@ -50,7 +50,7 @@ Our analysis was run on a 56-core Intel-based Linux server with 512 GB of memory
 * R 4.3.1
 	* fixest 0.11.1
 
-
+When performing this analysis, we installed GraphLab using Python 2.7 `pip install GraphLab-Create`. GraphLab has since been deprecated and replaced by Turi Create, which can be installed by `pip install turicreate`. However, our code has not been tested on Turi Create.
 
 ##  Description of programs/code ##
 
