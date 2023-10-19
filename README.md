@@ -24,7 +24,7 @@ The author(s) of the manuscript have legitimate access to and permission to use 
 ### Data availability
 
 
-The paper uses a mix of public survey data and private mobile phone data. The survey data were obtained from the National Institute of Statistics of Rwanda (2012, 2014). The mobile phone data were provided by a private mobile phone operator in Rwanda.
+The paper uses a mix of public survey data and private mobile phone data. The survey data were obtained from the National Institute of Statistics of Rwanda (2012, 2014).
 
  * National Institute of Statistics of Rwanda, “The Evolution of Poverty in Rwanda from 2000 to 2011: Results from the Household Surveys (EICV),” Technical Report, Kigali, Rwanda February 2012. Accessed from https://catalog.ihsn.org/index.php/catalog/3142/download/46398
  
